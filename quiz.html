@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz – Le Monde des Canards</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">🦆 Le Monde des Canards</div>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="especes.html">Espèces</a>
+        <a href="biologie.html">Biologie</a>
+        <a href="habitat.html">Habitat</a>
+        <a href="protection.html">Protection</a>
+        <a href="enfants.html">Espace enfants</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <button id="darkModeToggle">🌙 Mode sombre</button>
+    </nav>
+</header>
+
+<main>
+    <h1>Quiz spécial canards</h1>
+    <p class="section-intro">
+        Réponds aux questions ci-dessous puis clique sur le bouton pour voir ton score !
+    </p>
+
+    <form id="quizForm" onsubmit="event.preventDefault(); corrigerQuiz();">
+        <div class="quiz-question">
+            <h3>1. Quel est le canard le plus commun dans les parcs ?</h3>
+            <div class="quiz-options">
+                <label><input type="radio" name="q1" value="colvert"> Le canard colvert</label>
+                <label><input type="radio" name="q1" value="pingouin"> Le pingouin</label>
+                <label><input type="radio" name="q1" value="autruche"> L’autruche</label>
+            </div>
+        </div>
+
+        <div class="quiz-question">
+            <h3>2. Peut-on donner beaucoup de pain aux canards ?</h3>
+            <div class="quiz-options">
+                <label><input type="radio" name="q2" value="painOui"> Oui, autant qu’on veut</label>
+                <label><input type="radio" name="q2" value="painNon"> Non, ce n’est pas bon pour eux</label>
+                <label><input type="radio" name="q2" value="painPeu"> Seulement quand il pleut</label>
+            </div>
+        </div>
+
+        <div class="quiz-question">
+            <h3>3. Comment s’appellent les “doigts” reliés entre eux sur les pattes du canard ?</h3>
+            <div class="quiz-options">
+                <label><input type="radio" name="q3" value="griffes"> Des griffes</label>
+                <label><input type="radio" name="q3" value="palmure"> La palmure</label>
+                <label><input type="radio" name="q3" value="plumes"> Des plumes</label>
+            </div>
+        </div>
+
+        <button class="btn" type="submit">Valider mes réponses</button>
+    </form>
+
+    <div id="quizResult"></div>
+</main>
+
+<footer>
+    <p>© 2025 – Le Monde des Canards.</p>
+</footer>
+</body>
+</html>
